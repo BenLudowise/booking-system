@@ -4,6 +4,7 @@ import com.ben.bookingsystem.entity.Role;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.NotNull;
 
 public class RegisterRequest {
 
@@ -18,7 +19,7 @@ public class RegisterRequest {
     @NotBlank
     private String fullName;
 
-    @NotBlank
+    @NotNull
     private Role role;
 
     // Getters and setters
